@@ -1,0 +1,142 @@
+html {
+  font-size: (100vw/750) * 20;
+  background-color: #eff0f4;
+  padding: 0 4%;
+  img {
+    vertical-align: middle;
+  }
+  header {
+    display: flex;
+    height: (175/20rem);
+    justify-content: space-between;
+    align-items: center;
+    .iconfont {
+      color: #888;
+      font-size: (50/20rem);
+    }
+    h1 a {
+      color: #24253d;
+      font-size: (50/20rem);
+    }
+  }
+
+  .banner {
+    img {
+      width: 100%;
+      display: block; //消除图片底部的间隙，并撑开父元素
+      border-radius: (14/20rem);
+    }
+  }
+
+  nav {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    a {
+      flex-shrink: 0;
+      width: 47%;
+      height: (105/20rem);
+      line-height: (100/20rem);
+      margin-top: (42/20rem);
+      border-radius: (10/20rem);
+      color: #fff;
+      font-size: (28/20rem);
+      .iconfont {
+        margin: 0 (20/20rem) 0 (35/20rem);
+        font-size: (40/20rem);
+      }
+      &:first-child {
+        background: linear-gradient(
+          to right,
+          rgb(172, 220, 251),
+          rgb(76, 177, 245)
+        );
+      }
+      &:nth-child(2) {
+        background: linear-gradient(
+          to right,
+          rgb(182, 192, 251),
+          rgb(103, 125, 251)
+        );
+      }
+      &:nth-child(3) {
+        background: linear-gradient(
+          to right,
+          rgb(222, 201, 250),
+          rgb(184, 147, 199)
+        );
+      }
+      &:last-child {
+        background: linear-gradient(
+          to right,
+          rgb(250, 204, 210),
+          rgb(248, 140, 149)
+        );
+      }
+    }
+  }
+
+  .column {
+    margin-top: (48/20rem);
+    .top {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: (46/20rem);
+      .title {
+        border-left: 2px solid rgb(89, 178, 251);
+        line-height: (42/20rem);
+        padding-left: (20/20rem);
+        font-size: (32/20rem);
+        color: #24253d;
+      }
+      .more {
+        color: #888;
+        font-size: (28/20rem);
+      }
+    }
+    .content {
+      width: 100%;
+      overflow: auto;
+      display: flex;
+      justify-content: space-between;
+      .item {
+        width: 48%;
+        flex-shrink: 0;
+        padding: (20/20rem);
+        box-sizing: border-box;
+        margin-right: 4%;
+        background-color: #fff;
+        box-shadow: 0 0 3px #ccc;
+        border-radius: 5px;
+        .cover {
+          width: 100%;
+        }
+        h3 {
+          font-size: (30/20rem);
+          margin: (20/20rem) 0;
+        }
+        .author {
+          .photo {
+            width: (42/20rem);
+            height: (42/20rem);
+            border-radius: 50%;
+          }
+          .nickname {
+            color: #999;
+            margin-left: (10/20rem);
+            font-size: (20/20rem);
+            line-height: (42/20rem);
+          }
+        }
+        &:last-of-type {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+
+  .incomplete {
+    text-align: center;
+    margin: (30/20rem);
+  }
+}
